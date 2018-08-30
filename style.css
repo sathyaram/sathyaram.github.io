@@ -77,9 +77,8 @@ nav a {
 header {
     padding:15px;
     background: #FF416C;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(270deg, #FF4B2B, #FF416C, #faaa15);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(270deg, #FF4B2B, #FF416C, #faaa15); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
-    
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C, #faaa15);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C, #faaa15); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
     background-size: 400% 400%;
     display:flex;
     align-items:center;
@@ -88,8 +87,8 @@ header {
     width: calc(100% - 30px);
     height: calc(100% - 30px);
     -webkit-animation: AnimationName 30s ease infinite;
--moz-animation: AnimationName 30s ease infinite;
-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
 }
 
 h1 {
