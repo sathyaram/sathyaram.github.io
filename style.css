@@ -75,7 +75,7 @@ nav a {
 }
 
 header {
-    padding:30px;
+    padding:15px;
     background: #FF416C;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
@@ -83,8 +83,8 @@ header {
     align-items:center;
     justify-content: center;
     flex-direction:column;
-    width: calc(100% - 60px);
-    height: calc(100% - 60px);
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
 }
 
 h1 {
@@ -96,7 +96,6 @@ h1 {
     -webkit-text-fill-color: transparent;
     font-size:90px;
     font-family: 'Pacifico', cursive;
-
 }
 
 h2 {
@@ -123,4 +122,16 @@ h2 {
 .email a > i {
     font-size:16px;
     padding-left:5px;
+}
+
+/*------Media Queries------*/
+
+@media (max-width: 770px) {
+    h1 {
+        font-size:52px;
+    }
+
+    h2 {
+        font-size:16px;
+    }
 }
