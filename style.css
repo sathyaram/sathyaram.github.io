@@ -61,9 +61,40 @@ body {
     position: fixed;
 }
 
+.overlay:before {
+    content:"";
+    display: inline-block;
+    top:0;
+    position:absolute;
+    z-index:5;
+    left:50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:  30px 80px 0 80px;
+    border-color:  white transparent transparent transparent;
+}
+
+.overlay:after {
+    content:"";
+    display: inline-block;
+    bottom:0;
+    position:absolute;
+    z-index:5;
+    left:50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 80px 30px 80px;
+    border-color: transparent transparent white transparent;
+
+}
+
 nav {
     position: absolute;
-    top:-29px;
+    top:-27px;
     left:50%;
     transform:translateX(-50%);
 }
@@ -115,7 +146,7 @@ h2 {
 .email {
     font-family: 'Abel', sans-serif;
     text-align:center;
-    padding-top:7px;
+    padding-top:5px;
 }
 
 .email a {
