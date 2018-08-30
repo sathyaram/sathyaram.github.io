@@ -43,6 +43,10 @@ table {
 	border-spacing: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*-----------------------------------*/
 
 body {
@@ -51,18 +55,30 @@ body {
 }
 
 .overlay {
-    margin:30px;
-    width: calc(100% - 60px);
-    height: calc(100% - 60px);
+    margin:40px;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
     position: fixed;
+}
+
+nav {
+    position: absolute;
+    top:-29px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+nav a {
+    font-size:18px;
+    padding:0 5px;
+    color:tomato;
 }
 
 header {
     padding:30px;
     background: #FF416C;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
     display:flex;
     align-items:center;
     justify-content: center;
@@ -72,24 +88,39 @@ background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, F
 }
 
 h1 {
-
     background: #C6FFDD;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #faacaf, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #faacaf, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-padding:5px 0 30px;
+    background: -webkit-linear-gradient(to right, #faacaf, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #faacaf, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding:5px 0 35px;
     -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-font-size:80px;
+    -webkit-text-fill-color: transparent;
+    font-size:90px;
     font-family: 'Pacifico', cursive;
 
 }
 
 h2 {
-    text-shadow:0 0 15px rgba(0,0,0,0.2);
+    text-shadow:0 0 15px rgba(0,0,0,0.15);
     padding-top:10px;
     color:white;
-    margin-top:-39px;
-    font-size:24px;
+    margin-top:-44px;
+    font-size:26px;
     letter-spacing: 1px;
     font-family: 'Abel', sans-serif;
+}
+
+.email {
+    font-family: 'Abel', sans-serif;
+    text-align:center;
+    padding-top:7px;
+}
+
+.email a {
+    color:tomato;
+    font-size:20px;
+}
+
+.email a > i {
+    font-size:16px;
+    padding-left:5px;
 }
