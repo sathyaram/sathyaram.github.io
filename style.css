@@ -159,6 +159,27 @@ h2 {
     padding-left:5px;
 }
 
+.portfolio-items {
+    color:white;
+    text-align:center;
+    font-size:13px;
+    padding-top:50px;
+    line-height:130%;
+    font-family: 'Abel', sans-serif;
+}
+
+.portfolio-items a {
+    color:#FBD786;
+    font-size:18px;
+    padding:2px;
+    display:inline-block;
+}
+
+a.github-link {
+    padding-top:4px;
+    font-size:16px;
+}
+
 /*------Media Queries------*/
 
 @media (max-width: 770px) {
