@@ -166,6 +166,8 @@ h2 {
     padding-top:50px;
     line-height:130%;
     font-family: 'Abel', sans-serif;
+    display:flex;
+    flex-direction:row;
 }
 
 .portfolio-items a {
@@ -173,6 +175,12 @@ h2 {
     font-size:18px;
     padding:2px;
     display:inline-block;
+}
+
+.portfolio-items p:not(:first-child) {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid white;
 }
 
 a.github-link {
